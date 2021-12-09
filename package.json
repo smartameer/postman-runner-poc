@@ -1,0 +1,28 @@
+{
+  "name": "postman-runner-poc",
+  "version": "1.0.0",
+  "description": "Postman Runner for restapi",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "npx newman run collection/app.json -e collection/environment.json",
+    "load-test": "node src/index.js"
+  },
+  "keywords": [
+    "postman",
+    "nodejs",
+    "test",
+    "restapi"
+  ],
+  "author": "smartameer@icloud.com",
+  "license": "MIT",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "fs": "^0.0.1-security",
+    "json-server": "^0.17.0"
+  },
+  "devDependencies": {
+    "newman": "^5.3.0",
+    "prompt": "^1.2.0"
+  }
+}
